@@ -44,12 +44,13 @@ pesq_alt_mas_med = sum(pesq_alt_mas) / pesq_mas  # Calcula a media de altura dos
 
 # Exibindo os resultados das pesquisas
 
+print() # Espaçamento
 print("Resultado da Pesquisa:") # Começa imprimir os resultados
 print() # Espaçamento
-print("A maior altura foi: ", pesq_alt_maior, " e a minima de: ", pesq_alt_menor) # Imprime a maior e menor altura da pesquisa
+print(f"A maior altura foi de {pesq_alt_maior} e a menor de {pesq_alt_menor}") # Imprime a maior e menor altura da pesquisa
 print() # Espaçamento
-print("A media de altura dos homens é de: ", pesq_alt_mas_med) # Imprime a media de altura dos homens
+print(f"A media de altura dos homens é de {pesq_alt_mas_med:.2f}") # Imprime a media de altura dos homens com limite de 2 casas apos o ponto
 print() # Espaçamento
-print("O numero de mulheres é de: ", pesq_fem) # Imprime a quantidade de mulheres
+print(f"O numero de mulheres é de {pesq_fem}") # Imprime a quantidade de mulheres
 
 # FIM!
