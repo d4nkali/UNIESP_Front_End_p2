@@ -39,7 +39,10 @@ for i in range(15): # Repetira 15 vezes o questionario
 
 pesq_alt_maior = max(pesq_alt) # Compara e armazena a maior altura da pesquisa
 pesq_alt_menor = min(pesq_alt)  # Compara e armazena a menor altura da pesquisa
-pesq_alt_mas_med = sum(pesq_alt_mas) / pesq_mas  # Calcula a media de altura dos homens
+if pesq_mas > 0: # Se tiver mais de 1 homen, então:
+    pesq_alt_mas_med = sum(pesq_alt_mas) / pesq_mas # Calcula a media de altura dos homens
+else: # Senão:
+    pesq_alt_mas_med = 0  # Define a media de altura dos homens para 0
 
 
 # Exibindo os resultados das pesquisas
