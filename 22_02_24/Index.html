@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- Atividade 2
 
-<head>
+Obtenha dados da altura e o sexo (M ou F) de 15 pessoas e apresente os seguintes resultados:
+
+- A maior e a menor altura do grupo;
+- A média de altura dos homens;
+- O número de mulheres.
+
+Desenvolver atividade utilizando, obrigatoriamente, a linguagem Javascript
+
+-->
+
+<head>  <!-- Configurações do site -->
 
     <meta charset="UTF-8">
     <title>Atividade 2</title>
@@ -12,10 +23,44 @@
 
 <body>
     
-    <div class="Cabeçalho">
+    <div class="Cabeçalho"> <!-- Cabeçalho do site -->
 
         <h1>Pesquisa</h1>
         <hr>
+
+    </div>
+
+    <div class="Formulario"> <!-- Formulario das Perguntas -->
+
+        <h3 id="cont_pessoas">Pessoas cadastradas: 0</h3> <!-- Exibe a quantidade de pessoas ja cadrastradas -->
+
+        <form method="post" id="formulario">    <!-- Criando formulario -->
+
+            <p>
+
+                <!-- Pergunta da Altura da pessoa -->
+                <label for="altura">Digite a <b>altura</b> da pessoa:</label>
+                <input type="number" id="altura" required>
+
+                <br>
+                <br>
+                
+                <!-- Pergunta do Sexo da pessoa -->
+                <label for="sexo">Selecione o <b>sexo</b> da pessoa: </label>
+                <select id="sexo" required>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
+
+                <br>
+                <br>
+
+                <!-- Botão de envio para a função "add_pessoa" -->
+                <button type="submit" onclick="add_pessoa()">Adicionar Pessoa</button>
+
+            </p>
+
+        </form>
 
     </div>
 
