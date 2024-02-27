@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- Atividade 2
+<!-- Atividade 2 - Documento HTML do site
 
 Obtenha dados da altura e o sexo (M ou F) de 15 pessoas e apresente os seguintes resultados:
 
@@ -20,6 +20,7 @@ Aluno: Danilo Pereira Viana - P2-B
 
     <meta charset="UTF-8">
     <title>Atividade 2</title>
+    <link rel="stylesheet" type="text/css" href="css/Index.css">
 
 </head>
 
@@ -30,6 +31,7 @@ Aluno: Danilo Pereira Viana - P2-B
 
         <h1>Pesquisa</h1>
         <hr>
+        <br>
 
     </div>
 
@@ -42,17 +44,19 @@ Aluno: Danilo Pereira Viana - P2-B
             <p>
 
                 <!-- Pergunta da Altura da pessoa -->
-                <label for="perg_altura">Digite a <b>altura</b> da pessoa em m (Ex: 1.83):</label>
+                <label for="perg_altura">Digite a <b>Altura</b> da pessoa em m (Ex: 1.83):</label>
                 <input type="number" step=0.01 id="perg_altura" required>
 
                 <br>
                 <br>
                 
                 <!-- Pergunta do Sexo da pessoa -->
-                <label for="perg_sexo">Selecione o <b>sexo</b> da pessoa: </label>
+                <label for="perg_sexo">Selecione o <b>Sexo</b> da pessoa (Masculino ou Feminino): </label>
                 <select id="perg_sexo" required>
+
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
+
                 </select>
 
                 <br>
@@ -67,9 +71,10 @@ Aluno: Danilo Pereira Viana - P2-B
 
     </div>
 
-    <div class="Resultados"> <!-- Exibe os resultados da pesquisa do script javascript -->
+    <br>
 
-        <br>
+    <div class="Resultados" id="area_resultados"> <!-- Exibe os resultados da pesquisa do script javascript -->
+
         <h3 id="exibir_result"></h3>
         <p id="pesq_altura_max"></p>
         <p id="pesq_altura_min"></p>
