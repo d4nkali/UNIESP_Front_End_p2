@@ -1,0 +1,64 @@
+/* Atividade 2 - Estilos CSS do site
+
+Obtenha dados da altura e o sexo (M ou F) de 15 pessoas e apresente os seguintes resultados:
+
+- A maior e a menor altura do grupo;
+- A média de altura dos homens;
+- O número de mulheres.
+
+Desenvolver atividade utilizando, obrigatoriamente, a linguagem Javascript
+
+
+Aluno: Danilo Pereira Viana - P2-B
+
+*/
+
+body {
+
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 1%;
+
+}
+
+.Cabeçalho {
+
+    text-align: center;
+    font-size: large;
+    padding: 1%;
+
+}
+
+.Formulario {
+
+    border: 5px solid #ea1818; 
+    padding: 20px; 
+    border-radius: 30px; 
+
+}
+
+.Formulario b {
+
+    color: #ea1818;
+
+}
+
+.Formulario input, .Formulario select, .Formulario button {
+
+    margin-bottom: 10px; 
+    padding: 2px; 
+    border: 3px solid #ea1818; 
+    border-radius: 5px;
+    
+}
+
+.Resultados {
+
+    display: none;
+    border: 7px solid #1842ea;
+    padding: 10px;
+    border-radius: 30px; 
+
+}
