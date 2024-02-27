@@ -70,6 +70,7 @@ function exibir_Resultados() { // Cria a função
 
     // Exibe os resultados para o html
 
+    document.getElementById('exibir_result').innerText = `Resultados: `
     document.getElementById('pesq_altura_max').innerText = `Maior Altura: ${max_altura.toFixed(2)} m`;
     document.getElementById('pesq_altura_min').innerText = `Menor Altura: ${min_altura.toFixed(2)} m`;
     document.getElementById('media_pesq_altura_homens').innerText = `Média de Altura dos Homens: ${media_altura_homens.toFixed(2)} m`;
