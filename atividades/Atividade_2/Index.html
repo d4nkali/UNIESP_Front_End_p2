@@ -11,6 +11,9 @@ Obtenha dados da altura e o sexo (M ou F) de 15 pessoas e apresente os seguintes
 
 Desenvolver atividade utilizando, obrigatoriamente, a linguagem Javascript
 
+
+Aluno: Danilo Pereira Viana - P2-B
+
 -->
 
 <head>  <!-- Configurações do site -->
@@ -34,20 +37,20 @@ Desenvolver atividade utilizando, obrigatoriamente, a linguagem Javascript
 
         <h3 id="cont_pessoas">Pessoas cadastradas: 0</h3> <!-- Exibe a quantidade de pessoas ja cadrastradas -->
 
-        <form method="post" id="formulario">    <!-- Criando formulario -->
+        <form method="get" id="formulario">    <!-- Criando formulario -->
 
             <p>
 
                 <!-- Pergunta da Altura da pessoa -->
-                <label for="altura">Digite a <b>altura</b> da pessoa:</label>
-                <input type="number" id="altura" required>
+                <label for="perg_altura">Digite a <b>altura</b> da pessoa em m (Ex: 1.83):</label>
+                <input type="number" step=0.01 id="perg_altura" required>
 
                 <br>
                 <br>
                 
                 <!-- Pergunta do Sexo da pessoa -->
-                <label for="sexo">Selecione o <b>sexo</b> da pessoa: </label>
-                <select id="sexo" required>
+                <label for="perg_sexo">Selecione o <b>sexo</b> da pessoa: </label>
+                <select id="perg_sexo" required>
                     <option value="M">Masculino</option>
                     <option value="F">Feminino</option>
                 </select>
@@ -55,8 +58,8 @@ Desenvolver atividade utilizando, obrigatoriamente, a linguagem Javascript
                 <br>
                 <br>
 
-                <!-- Botão de envio para a função "add_pessoa" -->
-                <button type="submit" onclick="add_pessoa()">Adicionar Pessoa</button>
+                <!-- Botão de envio para a função "add_Pessoa" -->
+                <button type="submit" onclick="add_Pessoa(event)">Adicionar Pessoa</button>
 
             </p>
 
@@ -64,14 +67,17 @@ Desenvolver atividade utilizando, obrigatoriamente, a linguagem Javascript
 
     </div>
 
-    <div class="Resultados"> <!-- Exibi os resultados da pesquisa do script javascript -->
+    <div class="Resultados"> <!-- Exibe os resultados da pesquisa do script javascript -->
 
-        <p id="altura_max"></p>
-        <p id="altura_min"></p>
-        <p id="media_altura_homens"></p>
+        <br>
+        <p id="pesq_altura_max"></p>
+        <p id="pesq_altura_min"></p>
+        <p id="media_pesq_altura_homens"></p>
         <p id="cont_mulheres"></p>
 
     </div>
+
+    <script src="js/Atividade_2.js"></script> <!-- Linka o script para o html -->
 
 </body>
 
