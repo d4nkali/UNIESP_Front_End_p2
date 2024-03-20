@@ -1,0 +1,14 @@
+/* Atividade 3 - CSS do site */
+
+body {
+
+    color: white;
+    background-color: black;
+
+}
+
+.cabeçalho h1 {
+
+    text-align: center;
+
+}
