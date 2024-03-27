@@ -30,6 +30,9 @@ var aluno_1 = {
 
 }
 
-console.log(aluno_1);
+console.log(aluno_1.nome);
+console.log(aluno_1.idade);
+console.log(aluno_1.filiacao[0]);
+console.log(aluno_1.filiacao[1]);
 console.log();
-console.log(aluno_1.dadosCompletos());
+console.log("Os dados estão preenchidos? " + aluno_1.dadosCompletos());
